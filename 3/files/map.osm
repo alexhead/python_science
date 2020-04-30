@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.8.2 (14249 thorn-03.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+ <bounds minlat="58.0017900" minlon="56.2595000" maxlat="58.0030600" maxlon="56.2630600"/>
+ <node id="271291923" visible="true" version="11" changeset="32645961" timestamp="2015-07-15T09:06:03Z" user="Digy" uid="34828" lat="57.9996114" lon="56.2631336">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="271291984" visible="true" version="12" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0012434" lon="56.2616515">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="271291985" visible="true" version="8" changeset="32645961" timestamp="2015-07-15T09:06:03Z" user="Digy" uid="34828" lat="57.9980198" lon="56.2646154">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="271292222" visible="true" version="11" changeset="32645961" timestamp="2015-07-15T09:06:04Z" user="Digy" uid="34828" lat="58.0039314" lon="56.2633178"/>
+ <node id="271292223" visible="true" version="11" changeset="32645961" timestamp="2015-07-15T09:06:04Z" user="Digy" uid="34828" lat="58.0029635" lon="56.2600615">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="288136912" visible="true" version="17" changeset="67841963" timestamp="2019-03-06T12:28:19Z" user="Salty Ear" uid="8105270" lat="58.0045550" lon="56.2585601">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="288137193" visible="true" version="8" changeset="67841963" timestamp="2019-03-06T12:28:19Z" user="Salty Ear" uid="8105270" lat="58.0039120" lon="56.2591545"/>
+ <node id="625187093" visible="true" version="8" changeset="76559144" timestamp="2019-11-03T18:33:46Z" user="Александр Синявский" uid="3798127" lat="58.0055221" lon="56.2576146">
+  <tag k="highway" v="traffic_signals"/>
+ </node>
+ <node id="697627410" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:54:19Z" user="Digy" uid="34828" lat="58.0027386" lon="56.2623806"/>
+ <node id="697627412" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:55:28Z" user="Digy" uid="34828" lat="58.0025831" lon="56.2625256"/>
+ <node id="697627413" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:53:14Z" user="Digy" uid="34828" lat="58.0026193" lon="56.2626638"/>
+ <node id="697627415" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:54:34Z" user="Digy" uid="34828" lat="58.0026598" lon="56.2626261"/>
+ <node id="697627417" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:55:24Z" user="Digy" uid="34828" lat="58.0027386" lon="56.2629272"/>
+ <node id="697627419" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:53:27Z" user="Digy" uid="34828" lat="58.0026947" lon="56.2629682"/>
+ <node id="697627420" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:53:43Z" user="Digy" uid="34828" lat="58.0027301" lon="56.2631031"/>
+ <node id="697627425" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:54:22Z" user="Digy" uid="34828" lat="58.0028890" lon="56.2629547"/>
+ <node id="697627479" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0019913" lon="56.2636544"/>
+ <node id="697627481" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0016811" lon="56.2624375"/>
+ <node id="697627483" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0017852" lon="56.2623429"/>
+ <node id="697627484" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0019430" lon="56.2629617"/>
+ <node id="697627486" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0021037" lon="56.2628158"/>
+ <node id="697627487" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0021808" lon="56.2631183"/>
+ <node id="697627489" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0020320" lon="56.2632535"/>
+ <node id="697627490" visible="true" version="4" changeset="33567992" timestamp="2015-08-25T10:58:57Z" user="prohibited" uid="1232057" lat="58.0021074" lon="56.2635491"/>
+ <node id="697677937" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:55:14Z" user="Digy" uid="34828" lat="58.0017031" lon="56.2597535"/>
+ <node id="697677939" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:53:14Z" user="Digy" uid="34828" lat="58.0015740" lon="56.2592433"/>
+ <node id="697677942" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:54:46Z" user="Digy" uid="34828" lat="58.0019447" lon="56.2589090"/>
+ <node id="697677943" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:52:29Z" user="Digy" uid="34828" lat="58.0020269" lon="56.2592334"/>
+ <node id="697677946" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:53:43Z" user="Digy" uid="34828" lat="58.0018103" lon="56.2594286"/>
+ <node id="697677949" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:52:42Z" user="Digy" uid="34828" lat="58.0018574" lon="56.2596145"/>
+ <node id="697678118" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:53:52Z" user="Digy" uid="34828" lat="58.0018649" lon="56.2597966"/>
+ <node id="697678121" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:52:31Z" user="Digy" uid="34828" lat="58.0017346" lon="56.2599163"/>
+ <node id="697678124" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:54:08Z" user="Digy" uid="34828" lat="58.0019355" lon="56.2606949"/>
+ <node id="697678126" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:55:18Z" user="Digy" uid="34828" lat="58.0020658" lon="56.2605751"/>
+ <node id="697678130" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:54:56Z" user="Digy" uid="34828" lat="58.0026759" lon="56.2594237"/>
+ <node id="697678132" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:52:54Z" user="Digy" uid="34828" lat="58.0027579" lon="56.2597378"/>
+ <node id="697678134" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:54:14Z" user="Digy" uid="34828" lat="58.0025093" lon="56.2599692"/>
+ <node id="697678136" visible="true" version="3" changeset="5337330" timestamp="2010-07-28T11:55:08Z" user="Digy" uid="34828" lat="58.0024273" lon="56.2596551"/>
+ <node id="702633610" visible="true" version="6" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318" lat="58.0020817" lon="56.2611848"/>
+ <node id="702633614" visible="true" version="6" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318" lat="58.0021295" lon="56.2613604"/>
+ <node id="702633616" visible="true" version="6" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318" lat="58.0020895" lon="56.2613991"/>
+ <node id="702633621" visible="true" version="6" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318" lat="58.0022143" lon="56.2622455"/>
+ <node id="702633624" visible="true" version="6" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318" lat="58.0019585" lon="56.2613041"/>
+ <node id="702633636" visible="true" version="5" changeset="32645961" timestamp="2015-07-15T09:06:19Z" user="Digy" uid="34828" lat="58.0031174" lon="56.2612113"/>
+ <node id="702633644" visible="true" version="5" changeset="32645961" timestamp="2015-07-15T09:06:19Z" user="Digy" uid="34828" lat="58.0031585" lon="56.2613694"/>
+ <node id="702633650" visible="true" version="6" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318" lat="58.0022976" lon="56.2621649"/>
+ <node id="702633655" visible="true" version="6" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318" lat="58.0022554" lon="56.2620097"/>
+ <node id="702712610" visible="true" version="4" changeset="32645961" timestamp="2015-07-15T09:06:19Z" user="Digy" uid="34828" lat="58.0029412" lon="56.2605074"/>
+ <node id="702712612" visible="true" version="4" changeset="32645961" timestamp="2015-07-15T09:06:19Z" user="Digy" uid="34828" lat="58.0027101" lon="56.2607371"/>
+ <node id="702712613" visible="true" version="4" changeset="32645961" timestamp="2015-07-15T09:06:19Z" user="Digy" uid="34828" lat="58.0027683" lon="56.2609458"/>
+ <node id="702712615" visible="true" version="4" changeset="32645961" timestamp="2015-07-15T09:06:19Z" user="Digy" uid="34828" lat="58.0029994" lon="56.2607161"/>
+ <node id="829989767" visible="true" version="5" changeset="67841963" timestamp="2019-03-06T12:28:19Z" user="Salty Ear" uid="8105270" lat="58.0042850" lon="56.2588097"/>
+ <node id="829989770" visible="true" version="4" changeset="32645961" timestamp="2015-07-15T09:06:20Z" user="Digy" uid="34828" lat="58.0037426" lon="56.2626668"/>
+ <node id="936390596" visible="true" version="4" changeset="32645961" timestamp="2015-07-15T09:06:23Z" user="Digy" uid="34828" lat="57.9981071" lon="56.2645344">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="1683378466" visible="true" version="10" changeset="51327229" timestamp="2017-08-22T07:03:36Z" user="nyuriks" uid="339581" lat="58.0017938" lon="56.2627498">
+  <tag k="amenity" v="bank"/>
+  <tag k="atm" v="yes"/>
+  <tag k="branch" v="Волго-Вятский банк"/>
+  <tag k="contact:phone" v="+7 495 5005550"/>
+  <tag k="contact:website" v="http://www.sberbank.ru"/>
+  <tag k="name" v="Сбербанк"/>
+  <tag k="name:en" v="Sberbank"/>
+  <tag k="name:ru" v="Сбербанк"/>
+  <tag k="opening_hours" v="Mo-Fr 09:00-19:30; Sa 09:00-17:30"/>
+  <tag k="operator" v="ПАО &quot;Сбербанк&quot;"/>
+  <tag k="operator:wikidata" v="Q205012"/>
+  <tag k="operator:wikipedia" v="ru:Сбербанк России"/>
+  <tag k="ref" v="6984/0245"/>
+  <tag k="wheelchair" v="yes"/>
+ </node>
+ <node id="2612454386" visible="true" version="3" changeset="67841963" timestamp="2019-03-06T12:28:19Z" user="Salty Ear" uid="8105270" lat="58.0040787" lon="56.2590004"/>
+ <node id="2841157693" visible="true" version="3" changeset="67457032" timestamp="2019-02-22T08:30:41Z" user="save2desk" uid="4149712" lat="58.0038082" lon="56.2631759"/>
+ <node id="2846050944" visible="true" version="4" changeset="75477311" timestamp="2019-10-09T17:56:57Z" user="save2desk" uid="4149712" lat="58.0038751" lon="56.2631108">
+  <tag k="crossing" v="uncontrolled"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="2846050946" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:05Z" user="Digy" uid="34828" lat="58.0030255" lon="56.2599990">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="2846050947" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:05Z" user="Digy" uid="34828" lat="58.0028958" lon="56.2601251">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="2846050948" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:05Z" user="Digy" uid="34828" lat="58.0030612" lon="56.2601262"/>
+ <node id="2846050949" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:05Z" user="Digy" uid="34828" lat="58.0029966" lon="56.2601990">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="2846050950" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:05Z" user="Digy" uid="34828" lat="58.0029311" lon="56.2602690"/>
+ <node id="3009887966" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0013138" lon="56.2615830">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="3009887974" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0026327" lon="56.2600704"/>
+ <node id="3009887975" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0023681" lon="56.2603078"/>
+ <node id="3009887976" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0023274" lon="56.2601462"/>
+ <node id="3009887977" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0025920" lon="56.2599088"/>
+ <node id="3009887978" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0022603" lon="56.2598798"/>
+ <node id="3009887979" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0023379" lon="56.2601881"/>
+ <node id="3009887980" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0022880" lon="56.2602329"/>
+ <node id="3009887981" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0023268" lon="56.2603867"/>
+ <node id="3009887982" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0022523" lon="56.2604535"/>
+ <node id="3009887983" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0021359" lon="56.2599914"/>
+ <node id="3009887993" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0011805" lon="56.2617257">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="3009887997" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0013593" lon="56.2617252"/>
+ <node id="3009887998" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="58.0012716" lon="56.2614331"/>
+ <node id="3009888004" visible="true" version="4" changeset="60125561" timestamp="2018-06-24T17:12:28Z" user="save2desk" uid="4149712" lat="57.9997022" lon="56.2630555">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="3009888007" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:06:07Z" user="Digy" uid="34828" lat="57.9995148" lon="56.2632218">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="3131280742" visible="true" version="3" changeset="60032328" timestamp="2018-06-21T06:46:30Z" user="save2desk" uid="4149712" lat="58.0024405" lon="56.2602817">
+  <tag k="name" v="Лион"/>
+  <tag k="shop" v="alcohol"/>
+ </node>
+ <node id="3131280916" visible="true" version="3" changeset="60032328" timestamp="2018-06-21T06:46:30Z" user="save2desk" uid="4149712" lat="58.0025885" lon="56.2601299">
+  <tag k="amenity" v="pharmacy"/>
+  <tag k="name" v="Планета здоровья"/>
+ </node>
+ <node id="3652478702" visible="true" version="1" changeset="32645961" timestamp="2015-07-15T09:05:17Z" user="Digy" uid="34828" lat="58.0038066" lon="56.2592519"/>
+ <node id="3652478705" visible="true" version="1" changeset="32645961" timestamp="2015-07-15T09:05:17Z" user="Digy" uid="34828" lat="58.0038762" lon="56.2590103"/>
+ <node id="3652478710" visible="true" version="1" changeset="32645961" timestamp="2015-07-15T09:05:17Z" user="Digy" uid="34828" lat="58.0040274" lon="56.2588656"/>
+ <node id="3652478714" visible="true" version="2" changeset="67841963" timestamp="2019-03-06T12:28:19Z" user="Salty Ear" uid="8105270" lat="58.0044469" lon="56.2584782"/>
+ <node id="3652478715" visible="true" version="2" changeset="67841963" timestamp="2019-03-06T12:28:19Z" user="Salty Ear" uid="8105270" lat="58.0044883" lon="56.2586224">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="3652478721" visible="true" version="2" changeset="67841963" timestamp="2019-03-06T12:28:19Z" user="Salty Ear" uid="8105270" lat="58.0046177" lon="56.2584987">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="3652479541" visible="true" version="5" changeset="77779384" timestamp="2019-12-01T11:37:33Z" user="save2desk" uid="4149712" lat="58.0054388" lon="56.2576943">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="3713424984" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0016340" lon="56.2619302"/>
+ <node id="3713424987" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0016453" lon="56.2620886"/>
+ <node id="3713424988" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0016696" lon="56.2618348"/>
+ <node id="3713424989" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0016697" lon="56.2620658"/>
+ <node id="3713424990" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0016822" lon="56.2622286"/>
+ <node id="3713424991" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0016827" lon="56.2618846"/>
+ <node id="3713424998" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0017656" lon="56.2627690">
+  <tag k="entrance" v="main"/>
+ </node>
+ <node id="3713425001" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0017796" lon="56.2621374"/>
+ <node id="3713425003" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0017871" lon="56.2621661"/>
+ <node id="3713425005" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0018100" lon="56.2617032"/>
+ <node id="3713425007" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0018436" lon="56.2618310"/>
+ <node id="3713425008" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0018448" lon="56.2621120"/>
+ <node id="3713425009" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0018529" lon="56.2621431"/>
+ <node id="3713425010" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0018539" lon="56.2631155">
+  <tag k="entrance" v="main"/>
+ </node>
+ <node id="3713425011" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0018933" lon="56.2617844"/>
+ <node id="3713425012" visible="true" version="1" changeset="33567992" timestamp="2015-08-25T10:58:54Z" user="prohibited" uid="1232057" lat="58.0019610" lon="56.2620418"/>
+ <node id="3934331853" visible="true" version="1" changeset="36451092" timestamp="2016-01-08T18:51:52Z" user="СПТ10ОФПС" uid="3155627" lat="58.0021683" lon="56.2604312">
+  <tag k="emergency" v="fire_hydrant"/>
+  <tag k="fire_hydrant:diameter" v="300"/>
+ </node>
+ <node id="3934331865" visible="true" version="1" changeset="36451092" timestamp="2016-01-08T18:51:53Z" user="СПТ10ОФПС" uid="3155627" lat="58.0028502" lon="56.2603028">
+  <tag k="emergency" v="fire_hydrant"/>
+  <tag k="fire_hydrant:diameter" v="300"/>
+ </node>
+ <node id="4762081154" visible="true" version="1" changeset="47263194" timestamp="2017-03-29T15:18:08Z" user="Petja" uid="87318" lat="58.0025708" lon="56.2607114"/>
+ <node id="4762081155" visible="true" version="1" changeset="47263194" timestamp="2017-03-29T15:18:08Z" user="Petja" uid="87318" lat="58.0026464" lon="56.2609897"/>
+ <node id="4762081156" visible="true" version="1" changeset="47263194" timestamp="2017-03-29T15:18:08Z" user="Petja" uid="87318" lat="58.0023920" lon="56.2612360"/>
+ <node id="4762081157" visible="true" version="1" changeset="47263194" timestamp="2017-03-29T15:18:08Z" user="Petja" uid="87318" lat="58.0023641" lon="56.2611333"/>
+ <node id="4762081158" visible="true" version="4" changeset="55206245" timestamp="2018-01-06T09:12:38Z" user="Petja" uid="87318" lat="58.0025151" lon="56.2608827">
+  <tag k="brand:wikidata" v="Q1768969"/>
+  <tag k="brand:wikipedia" v="ru:Пятёрочка"/>
+  <tag k="contact:phone" v="+7 800 5555505"/>
+  <tag k="contact:website" v="https://5ka.ru"/>
+  <tag k="name" v="Пятёрочка"/>
+  <tag k="name:en" v="Pyatyorochka"/>
+  <tag k="name:ru" v="Пятёрочка"/>
+  <tag k="opening_hours" v="08:00-23:00"/>
+  <tag k="operator" v="X5 Retail Group"/>
+  <tag k="ref" v="9343"/>
+  <tag k="shop" v="convenience"/>
+ </node>
+ <node id="6315735166" visible="true" version="1" changeset="67760689" timestamp="2019-03-04T09:58:31Z" user="Salty Ear" uid="8105270" lat="58.0026391" lon="56.2588899"/>
+ <node id="6315735176" visible="true" version="1" changeset="67760689" timestamp="2019-03-04T09:58:31Z" user="Salty Ear" uid="8105270" lat="58.0053096" lon="56.2578225"/>
+ <node id="6318796616" visible="true" version="1" changeset="67814647" timestamp="2019-03-05T17:37:50Z" user="save2desk" uid="4149712" lat="58.0014650" lon="56.2613140"/>
+ <node id="6318796617" visible="true" version="1" changeset="67814647" timestamp="2019-03-05T17:37:50Z" user="save2desk" uid="4149712" lat="58.0028651" lon="56.2599951"/>
+ <node id="6318796618" visible="true" version="1" changeset="67814647" timestamp="2019-03-05T17:37:50Z" user="save2desk" uid="4149712" lat="58.0029897" lon="56.2598614"/>
+ <node id="6318796619" visible="true" version="2" changeset="78115920" timestamp="2019-12-08T18:35:25Z" user="save2desk" uid="4149712" lat="58.0029256" lon="56.2599277">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="6507009497" visible="true" version="1" changeset="70709464" timestamp="2019-05-28T19:35:07Z" user="save2desk" uid="4149712" lat="58.0027058" lon="56.2588264"/>
+ <node id="6507009498" visible="true" version="1" changeset="70709464" timestamp="2019-05-28T19:35:07Z" user="save2desk" uid="4149712" lat="58.0029635" lon="56.2597876"/>
+ <node id="6507009499" visible="true" version="1" changeset="70709464" timestamp="2019-05-28T19:35:07Z" user="save2desk" uid="4149712" lat="58.0029031" lon="56.2598464"/>
+ <node id="6507009500" visible="true" version="1" changeset="70709464" timestamp="2019-05-28T19:35:07Z" user="save2desk" uid="4149712" lat="58.0028452" lon="56.2599031"/>
+ <node id="6507009501" visible="true" version="1" changeset="70709464" timestamp="2019-05-28T19:35:07Z" user="save2desk" uid="4149712" lat="58.0025763" lon="56.2589498"/>
+ <way id="55509488" visible="true" version="9" changeset="62972778" timestamp="2018-09-27T10:28:03Z" user="Salty Ear" uid="8105270">
+  <nd ref="697627410"/>
+  <nd ref="697627412"/>
+  <nd ref="697627413"/>
+  <nd ref="697627415"/>
+  <nd ref="697627417"/>
+  <nd ref="697627419"/>
+  <nd ref="697627420"/>
+  <nd ref="697627425"/>
+  <nd ref="697627410"/>
+  <tag k="addr:city" v="Пермь"/>
+  <tag k="addr:housenumber" v="17А"/>
+  <tag k="addr:street" v="1-я Красноармейская улица"/>
+  <tag k="amenity" v="kindergarten"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
+  <tag k="name" v="Детский сад №251"/>
+ </way>
+ <way id="55509493" visible="true" version="7" changeset="34083467" timestamp="2015-09-17T13:07:35Z" user="Jake Strine" uid="1832883">
+  <nd ref="697627479"/>
+  <nd ref="3713425010"/>
+  <nd ref="3713424998"/>
+  <nd ref="697627481"/>
+  <nd ref="697627483"/>
+  <nd ref="697627484"/>
+  <nd ref="697627486"/>
+  <nd ref="697627487"/>
+  <nd ref="697627489"/>
+  <nd ref="697627490"/>
+  <nd ref="697627479"/>
+  <tag k="addr:housenumber" v="21"/>
+  <tag k="addr:street" v="1-я Красноармейская улица"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
+ </way>
+ <way id="55510609" visible="true" version="6" changeset="34083467" timestamp="2015-09-17T13:07:52Z" user="Jake Strine" uid="1832883">
+  <nd ref="697677937"/>
+  <nd ref="697677939"/>
+  <nd ref="697677942"/>
+  <nd ref="697677943"/>
+  <nd ref="697677946"/>
+  <nd ref="697677949"/>
+  <nd ref="697677937"/>
+  <tag k="addr:housenumber" v="50"/>
+  <tag k="addr:street" v="Сибирская улица"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
+ </way>
+ <way id="55510618" visible="true" version="6" changeset="34083467" timestamp="2015-09-17T13:07:59Z" user="Jake Strine" uid="1832883">
+  <nd ref="697678118"/>
+  <nd ref="697678121"/>
+  <nd ref="697678124"/>
+  <nd ref="697678126"/>
+  <nd ref="697678118"/>
+  <tag k="addr:housenumber" v="83"/>
+  <tag k="addr:street" v="улица 25 Октября"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
+ </way>
+ <way id="55510621" visible="true" version="6" changeset="34083467" timestamp="2015-09-17T13:07:59Z" user="Jake Strine" uid="1832883">
+  <nd ref="697678130"/>
+  <nd ref="697678132"/>
+  <nd ref="697678134"/>
+  <nd ref="697678136"/>
+  <nd ref="697678130"/>
+  <tag k="addr:housenumber" v="81"/>
+  <tag k="addr:street" v="улица 25 Октября"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
+ </way>
+ <way id="55975861" visible="true" version="7" changeset="34083467" timestamp="2015-09-17T13:07:56Z" user="Jake Strine" uid="1832883">
+  <nd ref="702633610"/>
+  <nd ref="702633614"/>
+  <nd ref="702633616"/>
+  <nd ref="702633655"/>
+  <nd ref="702633650"/>
+  <nd ref="702633621"/>
+  <nd ref="702633624"/>
+  <nd ref="702633610"/>
+  <tag k="addr:housenumber" v="70"/>
+  <tag k="addr:street" v="улица 25 Октября"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
+ </way>
+ <way id="55975862" visible="true" version="6" changeset="34083467" timestamp="2015-09-17T13:07:55Z" user="Jake Strine" uid="1832883">
+  <nd ref="702633636"/>
+  <nd ref="702633644"/>
+  <nd ref="702633650"/>
+  <nd ref="702633655"/>
+  <nd ref="702633636"/>
+  <tag k="addr:housenumber" v="68"/>
+  <tag k="addr:street" v="улица 25 Октября"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
+ </way>
+ <way id="55979249" visible="true" version="2" changeset="69447144" timestamp="2019-04-22T10:09:50Z" user="save2desk" uid="4149712">
+  <nd ref="702712610"/>
+  <nd ref="702712612"/>
+  <nd ref="702712613"/>
+  <nd ref="702712615"/>
+  <nd ref="702712610"/>
+  <tag k="barrier" v="fence"/>
+  <tag k="leisure" v="pitch"/>
+  <tag k="sport" v="hockey;basketball"/>
+ </way>
+ <way id="185121718" visible="true" version="15" changeset="71548503" timestamp="2019-06-24T06:02:27Z" user="save2desk" uid="4149712">
+  <nd ref="625187093"/>
+  <nd ref="3652479541"/>
+  <nd ref="6315735176"/>
+  <nd ref="3652478721"/>
+  <nd ref="288136912"/>
+  <nd ref="3652478715"/>
+  <nd ref="829989767"/>
+  <nd ref="2612454386"/>
+  <nd ref="288137193"/>
+  <nd ref="3652478702"/>
+  <nd ref="2846050946"/>
+  <nd ref="271292223"/>
+  <nd ref="2846050947"/>
+  <nd ref="3009887966"/>
+  <nd ref="271291984"/>
+  <nd ref="3009887993"/>
+  <nd ref="3009888004"/>
+  <nd ref="271291923"/>
+  <nd ref="3009888007"/>
+  <nd ref="936390596"/>
+  <nd ref="271291985"/>
+  <tag k="highway" v="unclassified"/>
+  <tag k="lanes" v="2"/>
+  <tag k="name" v="улица 25 Октября"/>
+  <tag k="oneway" v="no"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="280496098" visible="true" version="3" changeset="67814647" timestamp="2019-03-05T17:37:52Z" user="save2desk" uid="4149712">
+  <nd ref="2846050948"/>
+  <nd ref="2846050949"/>
+  <nd ref="2846050950"/>
+  <nd ref="2846050947"/>
+  <nd ref="6318796617"/>
+  <nd ref="6318796619"/>
+  <nd ref="6318796618"/>
+  <nd ref="2846050946"/>
+  <nd ref="2846050948"/>
+  <tag k="footway" v="crossing"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="297138730" visible="true" version="1" changeset="24671137" timestamp="2014-08-11T07:14:38Z" user="prohibited" uid="1232057">
+  <nd ref="3009887974"/>
+  <nd ref="3009887975"/>
+  <nd ref="3009887979"/>
+  <nd ref="3009887976"/>
+  <nd ref="3009887977"/>
+  <nd ref="3009887974"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="297138731" visible="true" version="2" changeset="32645961" timestamp="2015-07-15T09:05:41Z" user="Digy" uid="34828">
+  <nd ref="3009887978"/>
+  <nd ref="3009887976"/>
+  <nd ref="3009887979"/>
+  <nd ref="3009887980"/>
+  <nd ref="3009887981"/>
+  <nd ref="3009887982"/>
+  <nd ref="3009887983"/>
+  <nd ref="3009887978"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="366082409" visible="true" version="4" changeset="70709464" timestamp="2019-05-28T19:35:07Z" user="save2desk" uid="4149712">
+  <nd ref="6315735166"/>
+  <nd ref="6507009499"/>
+  <nd ref="6318796619"/>
+  <nd ref="271292223"/>
+  <tag k="highway" v="service"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="367417733" visible="true" version="2" changeset="34083467" timestamp="2015-09-17T13:07:57Z" user="Jake Strine" uid="1832883">
+  <nd ref="3713424988"/>
+  <nd ref="3713425005"/>
+  <nd ref="3713425007"/>
+  <nd ref="3713425011"/>
+  <nd ref="3713425012"/>
+  <nd ref="3713425009"/>
+  <nd ref="3713425008"/>
+  <nd ref="3713425003"/>
+  <nd ref="3713425001"/>
+  <nd ref="3713424990"/>
+  <nd ref="3713424987"/>
+  <nd ref="3713424989"/>
+  <nd ref="3713424984"/>
+  <nd ref="3713424991"/>
+  <nd ref="3713424988"/>
+  <tag k="addr:housenumber" v="72"/>
+  <tag k="addr:street" v="улица 25 Октября"/>
+  <tag k="building" v="residential"/>
+  <tag k="building:levels" v="18"/>
+ </way>
+ <way id="483470478" visible="true" version="1" changeset="47263194" timestamp="2017-03-29T15:18:09Z" user="Petja" uid="87318">
+  <nd ref="702633614"/>
+  <nd ref="4762081157"/>
+  <nd ref="4762081156"/>
+  <nd ref="4762081155"/>
+  <nd ref="4762081154"/>
+  <nd ref="702633610"/>
+  <nd ref="702633614"/>
+  <tag k="addr:housenumber" v="70/1"/>
+  <tag k="addr:street" v="улица 25 Октября"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="499477372" visible="true" version="3" changeset="78115920" timestamp="2019-12-08T18:35:25Z" user="save2desk" uid="4149712">
+  <nd ref="2841157693"/>
+  <nd ref="2846050950"/>
+  <tag k="footway" v="sidewalk"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="545087472" visible="true" version="1" changeset="54412014" timestamp="2017-12-06T19:47:15Z" user="save2desk" uid="4149712">
+  <nd ref="2846050950"/>
+  <nd ref="3009887997"/>
+  <tag k="footway" v="sidewalk"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="674711817" visible="true" version="1" changeset="67814647" timestamp="2019-03-05T17:37:51Z" user="save2desk" uid="4149712">
+  <nd ref="3009887998"/>
+  <nd ref="6318796616"/>
+  <nd ref="6318796617"/>
+  <tag k="footway" v="sidewalk"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="684906840" visible="true" version="2" changeset="71548503" timestamp="2019-06-24T06:02:27Z" user="save2desk" uid="4149712">
+  <nd ref="271292222"/>
+  <nd ref="2846050944"/>
+  <nd ref="829989770"/>
+  <nd ref="2846050949"/>
+  <nd ref="271292223"/>
+  <tag k="highway" v="residential"/>
+  <tag k="lanes" v="2"/>
+  <tag k="name" v="улица Тимирязева"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="684906843" visible="true" version="2" changeset="78889207" timestamp="2019-12-26T16:11:40Z" user="save2desk" uid="4149712">
+  <nd ref="6318796618"/>
+  <nd ref="3652478705"/>
+  <nd ref="3652478710"/>
+  <nd ref="3652478714"/>
+  <tag k="footway" v="sidewalk"/>
+  <tag k="highway" v="footway"/>
+ </way>
+ <way id="693084042" visible="true" version="1" changeset="70709464" timestamp="2019-05-28T19:35:07Z" user="save2desk" uid="4149712">
+  <nd ref="6507009497"/>
+  <nd ref="6507009498"/>
+  <nd ref="6507009499"/>
+  <nd ref="6507009500"/>
+  <nd ref="6507009501"/>
+  <nd ref="6315735166"/>
+  <nd ref="6507009497"/>
+  <tag k="amenity" v="parking"/>
+ </way>
+</osm>
