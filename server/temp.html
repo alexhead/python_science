@@ -1,0 +1,806 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1">
+<title>AQUA MANAGEMENT SYSTEM</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><!-- X -->
+<link rel = "stylesheet" type="text/css" href="/css/style.css">
+<!-- <link rel = "stylesheet" type="text/css" href="/css/menu.css"><!-- X -->
+<link href="/css/screen_common.css" rel="stylesheet" type="text/css">
+<link media="only screen and (min-width:50px) and (max-width:500px)" href="/css/screen_phone.css" rel="stylesheet" type="text/css">
+<link media="only screen and (min-width:501px) and (max-width:800px)" href="/css/screen_tablet.css" rel="stylesheet" type="text/css">
+<link media="only screen and (min-width:200px) and (max-width:2600px)" href="/css/screen_desktop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/css/datepicker.css" type="text/css" />
+<link rel="stylesheet" media="screen" type="text/css" href="/css/layout.css" />
+
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/datepicker.js"></script>
+<script type="text/javascript" src="/js/eye.js"></script>
+<script type="text/javascript" src="/js/utils.js"></script>
+<script type="text/javascript" src="/js/layout.js?ver=1.0.2"></script>
+<script src="/js/menu.js"></script><!-- X -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script><!-- X -->
+
+
+<!--
+To learn more about the conditional comments around the html tags at the top of the file:
+paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+
+Do the following if you're using your customized build of modernizr (http://www.modernizr.com/):
+* insert the link to your js here
+* remove the link below to the html5shiv
+* add the "no-js" class to the html tags at the top
+* you can also remove the link to respond.min.js if you included the MQ Polyfill in your modernizr build
+-->
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+</head>
+<body>
+
+	<div id="page">
+		  <div id="login_info"><a href="/logout/" title="Выход">Выход:ООО (admin)</a></div>
+          <div id="navWrapper">
+            <nav>
+				<ul class="clearfix">
+	<li><a href="/monitor/">Монитор</a></li>
+	<li><a href="/connections/">Связь</a></li>
+	<li><a href="/alert/">Тревога</a></li>
+	<li><a href="/remains/">Остатки</a></li>
+	<li><a href="#">Отчёты</a>
+		<ul>
+		<li><a href="/sales/">Продажи</a></li>
+		<li><a href="/water/">Вода</a></li>
+		<li><a href="/periods/">Периоды</a></li>
+		<li><a href="/types/">Типы</a></li>
+		<li><a href="/collections/">Реестр инкассаций</a></li>
+		<!--<li><a class="submenu_link" href="/encashment/">Инкассации</a></li>-->
+		<li><a href="/total-collections/">Инкасс. сводный</a></li>
+		<li><a href="/total-collectors/">Инкассаторы</a></li>
+		</ul>
+	</li>
+	<li><a href="#">Настройки</a>
+		<ul>
+		<li><a href="/groups/">Группы</a></li>
+		<li><a href="/automats/">Автоматы</a></li>
+		<li><a href="/tare_types/">Товары</a></li>
+		<li><a href="/events/">Коды сообщений</a></li>
+		<li><a href="/cashiers/">Кассиры</a></li>
+		<li><a href="/collectors/">Инкассаторы</a></li>
+		<li><a href="/users/">Пользователи</a></li>
+		<li><a href="/common/">Общие</a></li>
+		<li><a href="/help/">Помощь</a></li>
+		</ul>
+	</li>
+</ul>
+            </nav>
+          </div>
+          <div id="parameters" class="clearfix"><form action="" method="POST" id="pform">
+<div id="kiosks_selector">
+	<select class="select_kiosk" name="group_id" id="group_field" tabindex="1" title="Выбор группы"><option value=0 >без группировки</option><option value=all >все группы</option><option value="exp_1" >Центр</option><option value="exp_2" >ЮГ</option><option value="exp_3" >ВОСТОК</option></select>
+	<select class="select_kiosk" name="automat_id" id="kiosk_field" tabindex="2" title="Выбор киоска"><option value=0>все киоски</option><option value=1 >1 (Краснофлотская, 5тн 38 (+400))</option><option value=48 >2 (Газеты Звезда, 75 (-200) 5тн)</option><option value=3 >3 (Революции, 12 (ровно) 5тн)</option><option value=4 >4 (Камчатовская, 18 5тн)</option><option value=5 >5 (25 октября, 68 (-1000) 5тн)</option><option value=6 >6 (М. Горького, 58 (1/2))</option><option value=7 >7 (Чернышевского, 13 (ровно) 5тн)</option><option value=8 >8 (Б2 Новосибирская, 13 (-500))</option><option value=9 >9 (Б3 Братская, 175 (-1000) 5тн)</option><option value=10 >10 (Островского, 72 (-1000) 5тн)</option><option value=11 >11 (Героев Хасана, 10 (-200))</option><option value=12 >12 (Б2 Солдатова, 35 (-500))</option><option value=13 >13 (П. Осипенко, 61 (ровно))</option><option value=14 >14 (Б2 Солдатова, 3 (-200))</option><option value=15 >15 (Б2 Солдатова, 34 (-200))</option><option value=16 >16 (Веселая, 1 (-700))</option><option value=17 >17 (Куйбышева, 51 (-500))</option><option value=18 >18 (Б3 Холмогорская, 4б (-500))</option><option value=19 >19 (Б3 Холмогорская, 2 (-1000))</option><option value=20 >20 (Революции, 3 (+400) 5тн)</option><option value=21 >21 (Б3 Запорожская, 11 (-200) 5тн)</option><option value=22 >22 (Б2 Куйбышева, 101 (-200) 5тн)</option><option value=23 >23 (Б3 Чкалова, 12 (-1000) 5тн)</option><option value=24 >24 (Революции, 9а (ровно) 5тн)</option><option value=25 >25 (Фонтанная, 9 5тн)</option><option value=26 >26 (Комсомольский пр. 81 (+500) 5тн)</option><option value=27 >27 (Б2 Гатауллина, 10 (-300) 5тн)</option><option value=28 >28 (Краснофлотская, 25 (-100) 5тн)</option><option value=29 >29 (Б3 Коломенская, 7 5тн)</option><option value=30 >30 (Б2 Гусарова, 16 5тн)</option><option value=31 >31 (Фонтанная, 1а (ровно) 5тн)</option><option value=32 >32 (Б2 Серебрянский пр. 14 5тн)</option><option value=33 >33 (Б2 Лодыгина, 46/1 5тн)</option><option value=34 >34 (Газеты Звезда, 44 (-100) 5тн)</option><option value=35 >35 (Б3 Братская, 22 (+200))</option><option value=36 >36 (Б2 Яблочкова, 17 (ровно))</option><option value=37 >37 (Б3 Коломенская, 49 (ровно))</option><option value=38 >38 (Б2 Курчатова, 10)</option><option value=39 >39 (Б2 Лодыгина, 29 (-1500))</option><option value=40 >40 (Б2 Клары Цеткин, 21 (+200))</option><option value=41 >41 (Б3 Льва Шатрова, 32 (+500))</option><option value=42 >42 (Б2 Вижайская, 25 (-300))</option><option value=43 >43 (Б2 Солдатова, 42 (+500))</option><option value=44 >44 (Куйбышева, 71 (ровно))</option><option value=45 >45 (Б3 Нейвинская, 10 (+500))</option><option value=46 >46 (Горького, 72 (ровно))</option><option value=47 >47 (Б2 Моторостроителей, 8 (+500))</option><option value=49 >48 (Б2 Уфимская, 12)</option><option value=50 >49 (Б3 Героев Хасана, 95 )</option><option value=51 >50 (Б2 Гусарова, 18а (+800))</option><option value=52 >51 (Б2 Куйбышева, 165 5тн)</option><option value=53 >52 (Б2 Солдатова, 29/3 5тн)</option><option value=54 >53 (Б3 Холмогорская, 4В 5тн (-1000))</option><option value=55 >54 (Горького, 64 5тн (+700))</option><option value=57 >55 (Б3 Балхашская, 198 (-1000))</option><option value=56 >56 (Б2 Лодыгина, 32 5тн (-500))</option><option value=58 >57 (Б3 Героев Хасана, 147 5тн)</option><option value=59 >58 (Комсомольский пр., 90  5тн (+1000))</option><option value=60 >59 (Б3 Краснополянская, 7 5тн)</option><option value=61 >60 (Б3 Братская, 50А  5тн)</option><option value=62 >61 (Б2 Новосибирская, 24 5тн)</option><option value=63 >62 (Б3 Косьвинская, 9  5тн)</option><option value=64 >63 (Б3 Чкалова, 8  5тн (-1000))</option><option value=65 >64 (Б3 Чкалова, 24  5тн)</option></select>
+</div>
+<div id="date_selector">
+  <div id="widget">
+		<div id="widgetField">
+			<span>01.05.2020 &divide; 30.05.2020</span>
+			<a href="#">Select date range<img src="/images/field.png" alt="выбор даты"/></a>
+		</div>
+	<div id="widgetCalendar">
+	</div>
+  </div>
+  <input type="hidden" id="date_begin" name="date_begin" value="01.05.2020"/>
+  <input type="hidden" id="date_end" name="date_end" value="30.05.2020"/>
+  <div class="date_type" style="display:none">
+	<input type="radio" name="date_type" value="0" checked>Дата инкассации
+  </div>
+  <div class="date_type" style="display:none">
+  	<input type="radio" name="date_type" value="1"  >Дата отчета
+  </div>
+</div>
+<div id="x_selector">
+	<select class="select_x" id="select_code" name=code onchange="document.getElementById('pform').submit(); return false;"><option value=0 selected>все сообщения</option><option value=10 >1 (автомат перегружен)</option><option value=42 >2 (нажата кнопка сервис)</option><option value=11 >101 (дверь модуля открыта)</option><option value=12 >102 ()</option><option value=13 >104 (окно тары не закрыто)</option><option value=14 >105 (объект в полости розлива)</option><option value=15 >106 (объект в полости тары)</option><option value=16 >107 (нет воды)</option><option value=17 >108 (нет тары)</option><option value=18 >109 (резкое снижение температуры)</option><option value=19 >110 (ошибка счетчика)</option><option value=20 >111 (ошибка шнека)</option><option value=21 >115 (кэшбокс полный)</option><option value=22 >116 (неудачная отправка лога)</option><option value=23 >117 (нет тары в полости розлива)</option><option value=24 >118 (неиспр. конц. окна розлива)</option><option value=25 >119 (нет сервиса)</option><option value=26 >120 (ошибка пульта)</option><option value=27 >121 (ош. закр. окна розлива)</option><option value=38 >130 (выдать все монеты)</option><option value=39 >131 (пополнение монетника)</option><option value=40 >132 (закончить пополнение монетами)</option><option value=37 >133 (инкассация)</option><option value=28 >150 (мало воды)</option><option value=29 >151 (полный бак)</option><option value=30 >152 (таймаут клиента)</option><option value=31 >154 (макс пауз)</option><option value=32 >155 (шнек № пуст)</option><option value=33 >156 (не открыли окно тары)</option><option value=34 >157 (не нажали кнопку)</option><option value=41 >161 ()</option><option value=3 >200 (Поступила сумма за товар)</option><option value=2 >201 (Продажа воды)</option><option value=5 >202 (Продажа тары)</option><option value=6 >203 (Отчет о банке автомата)</option><option value=7 >204 (Прием купюры)</option><option value=4 >205 (Банк киоска)</option><option value=8 >206 (Наполнение шнека)</option><option value=43 >210 (Нет сдачи в монетоприёмнике)</option><option value=1 >211 (Остаток воды)</option><option value=9 >230 (код сообщения от платежной системы)</option><option value=35 >250 (watchdog)</option><option value=36 >253 (замерз)</option></select>
+	<select class="select_x" id="cashier_id" name="cashier_id" onchange="document.getElementById('pform').submit(); return false;"><option value=0>все кассиры</option><option value=1 >Кассир 1</option><option value=2 >Нахратова М.С.</option></select>
+	<select class="select_x" id="collector_id" name="collector_id" onchange="document.getElementById('pform').submit(); return false;"><option value=0>все инкассаторы</option><option value=2 >Вшивков И.В.</option><option value=6 >Еремеев А.А.</option><option value=1 >Лазуков К.Б.</option><option value=7 >Овчинников А. В.</option><option value=4 >Стамиков А.В.</option><option value=5 >Щелчков В.М.</option></select>
+	<div class="select_actions">
+		<a class="select_chart" href="/sales/chart"><img src="/imgs/chart-64.png" alt="график" width="16" height="16"/></a>
+	  <a class="select_print" href="/sales/print"><img src="/imgs/print-64.png" alt="печать" width="16" height="16"/></a>
+		<a class="select_xls" href="/sales/excel"><img src="/imgs/xls-64.png" alt="эксель" width="16" height="16"/></a>
+		<a class="select_submit" href="#" onclick="document.getElementById('pform').submit(); return false;"><img src="/imgs/ok-64.png" alt="применить" width="16" height="16"/></a>
+	</div>
+</div>
+</form>
+<!--
+<div id="params_menu">
+    <form action="" method="POST">
+	<input type="hidden" name="page" value="1">
+    <p>Группа <select name="group_id"><option value=0 >без группировки</option><option value=all >все группы</option><option value="exp_1" >Центр</option><option value="exp_2" >ЮГ</option><option value="exp_3" >ВОСТОК</option></select> Автомат <select name="automat_id"><option value=0>все киоски</option><option value=1 >1 (Краснофлотская, 5тн 38 (+400))</option><option value=48 >2 (Газеты Звезда, 75 (-200) 5тн)</option><option value=3 >3 (Революции, 12 (ровно) 5тн)</option><option value=4 >4 (Камчатовская, 18 5тн)</option><option value=5 >5 (25 октября, 68 (-1000) 5тн)</option><option value=6 >6 (М. Горького, 58 (1/2))</option><option value=7 >7 (Чернышевского, 13 (ровно) 5тн)</option><option value=8 >8 (Б2 Новосибирская, 13 (-500))</option><option value=9 >9 (Б3 Братская, 175 (-1000) 5тн)</option><option value=10 >10 (Островского, 72 (-1000) 5тн)</option><option value=11 >11 (Героев Хасана, 10 (-200))</option><option value=12 >12 (Б2 Солдатова, 35 (-500))</option><option value=13 >13 (П. Осипенко, 61 (ровно))</option><option value=14 >14 (Б2 Солдатова, 3 (-200))</option><option value=15 >15 (Б2 Солдатова, 34 (-200))</option><option value=16 >16 (Веселая, 1 (-700))</option><option value=17 >17 (Куйбышева, 51 (-500))</option><option value=18 >18 (Б3 Холмогорская, 4б (-500))</option><option value=19 >19 (Б3 Холмогорская, 2 (-1000))</option><option value=20 >20 (Революции, 3 (+400) 5тн)</option><option value=21 >21 (Б3 Запорожская, 11 (-200) 5тн)</option><option value=22 >22 (Б2 Куйбышева, 101 (-200) 5тн)</option><option value=23 >23 (Б3 Чкалова, 12 (-1000) 5тн)</option><option value=24 >24 (Революции, 9а (ровно) 5тн)</option><option value=25 >25 (Фонтанная, 9 5тн)</option><option value=26 >26 (Комсомольский пр. 81 (+500) 5тн)</option><option value=27 >27 (Б2 Гатауллина, 10 (-300) 5тн)</option><option value=28 >28 (Краснофлотская, 25 (-100) 5тн)</option><option value=29 >29 (Б3 Коломенская, 7 5тн)</option><option value=30 >30 (Б2 Гусарова, 16 5тн)</option><option value=31 >31 (Фонтанная, 1а (ровно) 5тн)</option><option value=32 >32 (Б2 Серебрянский пр. 14 5тн)</option><option value=33 >33 (Б2 Лодыгина, 46/1 5тн)</option><option value=34 >34 (Газеты Звезда, 44 (-100) 5тн)</option><option value=35 >35 (Б3 Братская, 22 (+200))</option><option value=36 >36 (Б2 Яблочкова, 17 (ровно))</option><option value=37 >37 (Б3 Коломенская, 49 (ровно))</option><option value=38 >38 (Б2 Курчатова, 10)</option><option value=39 >39 (Б2 Лодыгина, 29 (-1500))</option><option value=40 >40 (Б2 Клары Цеткин, 21 (+200))</option><option value=41 >41 (Б3 Льва Шатрова, 32 (+500))</option><option value=42 >42 (Б2 Вижайская, 25 (-300))</option><option value=43 >43 (Б2 Солдатова, 42 (+500))</option><option value=44 >44 (Куйбышева, 71 (ровно))</option><option value=45 >45 (Б3 Нейвинская, 10 (+500))</option><option value=46 >46 (Горького, 72 (ровно))</option><option value=47 >47 (Б2 Моторостроителей, 8 (+500))</option><option value=49 >48 (Б2 Уфимская, 12)</option><option value=50 >49 (Б3 Героев Хасана, 95 )</option><option value=51 >50 (Б2 Гусарова, 18а (+800))</option><option value=52 >51 (Б2 Куйбышева, 165 5тн)</option><option value=53 >52 (Б2 Солдатова, 29/3 5тн)</option><option value=54 >53 (Б3 Холмогорская, 4В 5тн (-1000))</option><option value=55 >54 (Горького, 64 5тн (+700))</option><option value=57 >55 (Б3 Балхашская, 198 (-1000))</option><option value=56 >56 (Б2 Лодыгина, 32 5тн (-500))</option><option value=58 >57 (Б3 Героев Хасана, 147 5тн)</option><option value=59 >58 (Комсомольский пр., 90  5тн (+1000))</option><option value=60 >59 (Б3 Краснополянская, 7 5тн)</option><option value=61 >60 (Б3 Братская, 50А  5тн)</option><option value=62 >61 (Б2 Новосибирская, 24 5тн)</option><option value=63 >62 (Б3 Косьвинская, 9  5тн)</option><option value=64 >63 (Б3 Чкалова, 8  5тн (-1000))</option><option value=65 >64 (Б3 Чкалова, 24  5тн)</option></select></p>
+    День <select name="b_day"></select>
+    Неделя <select name="b_week"></select>
+    Месяц <select name="b_month"></select>
+    Год <select name="b_year"></select>
+    &nbsp;&nbsp;-&nbsp;&nbsp;
+    День <select name="e_day"></select>
+    Неделя <select name="e_week"></select>
+    Месяц <select name="e_month"></select>
+    Год <select name="e_year"></select>
+    <input id="btn_apply" type="submit" name="submit" value="Применить" />
+    </form>
+</div>
+--></div>
+          <div id="tables"><h1 class="section_title">Продажи</h1>
+<table class="items_table">
+    <tr>
+        <th title="Номер строки">№</th>
+        <th title="Автомат">Автомат <span class="sort_btn"><a href="/sales/automat_up">&uarr;</a></span><span class="sort_btn"><a href="/sales/automat_down">&darr;</a></span></th>
+        <th title="Итого продано на сумму (руб.)">Итого, руб. <span class="sort_btn"><a href="/sales/up=0">&uarr;</a></span><span class="sort_btn"><a href="/sales/down=0">&darr;</a></span></th>
+        <th title="Продано литров воды">Вода, л. <span class="sort_btn"><a href="/sales/up=1">&uarr;</a></span><span class="sort_btn"><a href="/sales/down=1">&darr;</a></span></th>
+        <th title="Продано воды на сумму (руб.)">Вода, руб. <span class="sort_btn"><a href="/sales/up=2">&uarr;</a></span><span class="sort_btn"><a href="/sales/down=2">&darr;</a></span></th>
+        <th title="Продано тары 5.0">Тара 5.0, шт. <span class="sort_btn"><a href="/sales/up=3">&uarr;</a></span><span class="sort_btn"><a href="/sales/down=3">&darr;</a></span></th>
+        <th title="Продано тары 5.0 на сумму (руб.)">Тара 5.0, руб. <span class="sort_btn"><a href="/sales/up=4">&uarr;</a></span><span class="sort_btn"><a href="/sales/down=4">&darr;</a></span></th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td width="150px" align=left>1 / Краснофлотская, 5тн 38 (+400)</td>
+        <td>5644</td>
+        <td>1570</td>
+        <td>5644</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td width="150px" align=left>3 / Революции, 12 (ровно) 5тн</td>
+        <td>4992</td>
+        <td>1316</td>
+        <td>4992</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td width="150px" align=left>4 / Камчатовская, 18 5тн</td>
+        <td>6385</td>
+        <td>1776</td>
+        <td>6385</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td width="150px" align=left>5 / 25 октября, 68 (-1000) 5тн</td>
+        <td>4322</td>
+        <td>1139</td>
+        <td>4322</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>5</td>
+        <td width="150px" align=left>6 / М. Горького, 58 (1/2)</td>
+        <td>3793</td>
+        <td>999</td>
+        <td>3793</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>6</td>
+        <td width="150px" align=left>7 / Чернышевского, 13 (ровно) 5тн</td>
+        <td>7585</td>
+        <td>1980</td>
+        <td>7585</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>7</td>
+        <td width="150px" align=left>8 / Б2 Новосибирская, 13 (-500)</td>
+        <td>5054</td>
+        <td>1406</td>
+        <td>5054</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>8</td>
+        <td width="150px" align=left>9 / Б3 Братская, 175 (-1000) 5тн</td>
+        <td>10345</td>
+        <td>2721</td>
+        <td>10345</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>9</td>
+        <td width="150px" align=left>10 / Островского, 72 (-1000) 5тн</td>
+        <td>3618</td>
+        <td>953</td>
+        <td>3618</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>10</td>
+        <td width="150px" align=left>11 / Героев Хасана, 10 (-200)</td>
+        <td>4023</td>
+        <td>1119</td>
+        <td>4023</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>11</td>
+        <td width="150px" align=left>12 / Б2 Солдатова, 35 (-500)</td>
+        <td>4272</td>
+        <td>1189</td>
+        <td>4272</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>12</td>
+        <td width="150px" align=left>13 / П. Осипенко, 61 (ровно)</td>
+        <td>4577</td>
+        <td>1262</td>
+        <td>4577</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>13</td>
+        <td width="150px" align=left>14 / Б2 Солдатова, 3 (-200)</td>
+        <td>4517</td>
+        <td>1235</td>
+        <td>4517</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>14</td>
+        <td width="150px" align=left>15 / Б2 Солдатова, 34 (-200)</td>
+        <td>6337</td>
+        <td>1762</td>
+        <td>6337</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>15</td>
+        <td width="150px" align=left>16 / Веселая, 1 (-700)</td>
+        <td>3439</td>
+        <td>901</td>
+        <td>3439</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>16</td>
+        <td width="150px" align=left>17 / Куйбышева, 51 (-500)</td>
+        <td>4891</td>
+        <td>1355</td>
+        <td>4891</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>17</td>
+        <td width="150px" align=left>18 / Б3 Холмогорская, 4б (-500)</td>
+        <td>4783</td>
+        <td>1330</td>
+        <td>4783</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>18</td>
+        <td width="150px" align=left>19 / Б3 Холмогорская, 2 (-1000)</td>
+        <td>4246</td>
+        <td>1181</td>
+        <td>4246</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>19</td>
+        <td width="150px" align=left>20 / Революции, 3 (+400) 5тн</td>
+        <td>4351</td>
+        <td>1147</td>
+        <td>4351</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>20</td>
+        <td width="150px" align=left>21 / Б3 Запорожская, 11 (-200) 5тн</td>
+        <td>7871</td>
+        <td>2189</td>
+        <td>7871</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>21</td>
+        <td width="150px" align=left>22 / Б2 Куйбышева, 101 (-200) 5тн</td>
+        <td>8070</td>
+        <td>2244</td>
+        <td>8070</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>22</td>
+        <td width="150px" align=left>23 / Б3 Чкалова, 12 (-1000) 5тн</td>
+        <td>4195</td>
+        <td>1105</td>
+        <td>4195</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>23</td>
+        <td width="150px" align=left>24 / Революции, 9а (ровно) 5тн</td>
+        <td>7251</td>
+        <td>1908</td>
+        <td>7251</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>24</td>
+        <td width="150px" align=left>25 / Фонтанная, 9 5тн</td>
+        <td>7557</td>
+        <td>1990</td>
+        <td>7557</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>25</td>
+        <td width="150px" align=left>26 / Комсомольский пр. 81 (+500) 5тн</td>
+        <td>3368</td>
+        <td>937</td>
+        <td>3368</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>26</td>
+        <td width="150px" align=left>27 / Б2 Гатауллина, 10 (-300) 5тн</td>
+        <td>6548</td>
+        <td>1821</td>
+        <td>6548</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>27</td>
+        <td width="150px" align=left>28 / Краснофлотская, 25 (-100) 5тн</td>
+        <td>7865</td>
+        <td>2187</td>
+        <td>7865</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>28</td>
+        <td width="150px" align=left>29 / Б3 Коломенская, 7 5тн</td>
+        <td>5359</td>
+        <td>1491</td>
+        <td>5359</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>29</td>
+        <td width="150px" align=left>30 / Б2 Гусарова, 16 5тн</td>
+        <td>4502</td>
+        <td>1252</td>
+        <td>4502</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>30</td>
+        <td width="150px" align=left>31 / Фонтанная, 1а (ровно) 5тн</td>
+        <td>4333</td>
+        <td>1141</td>
+        <td>4333</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>31</td>
+        <td width="150px" align=left>32 / Б2 Серебрянский пр. 14 5тн</td>
+        <td>7905</td>
+        <td>2193</td>
+        <td>7905</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>32</td>
+        <td width="150px" align=left>33 / Б2 Лодыгина, 46/1 5тн</td>
+        <td>4506</td>
+        <td>1253</td>
+        <td>4506</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>33</td>
+        <td width="150px" align=left>34 / Газеты Звезда, 44 (-100) 5тн</td>
+        <td>6053</td>
+        <td>1594</td>
+        <td>6053</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>34</td>
+        <td width="150px" align=left>35 / Б3 Братская, 22 (+200)</td>
+        <td>4071</td>
+        <td>1132</td>
+        <td>4071</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>35</td>
+        <td width="150px" align=left>36 / Б2 Яблочкова, 17 (ровно)</td>
+        <td>5494</td>
+        <td>1528</td>
+        <td>5494</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>36</td>
+        <td width="150px" align=left>37 / Б3 Коломенская, 49 (ровно)</td>
+        <td>5323</td>
+        <td>1480</td>
+        <td>5323</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>37</td>
+        <td width="150px" align=left>38 / Б2 Курчатова, 10</td>
+        <td>5889</td>
+        <td>1637</td>
+        <td>5889</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>38</td>
+        <td width="150px" align=left>39 / Б2 Лодыгина, 29 (-1500)</td>
+        <td>3904</td>
+        <td>1086</td>
+        <td>3904</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>39</td>
+        <td width="150px" align=left>40 / Б2 Клары Цеткин, 21 (+200)</td>
+        <td>7275</td>
+        <td>2023</td>
+        <td>7275</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>40</td>
+        <td width="150px" align=left>41 / Б3 Льва Шатрова, 32 (+500)</td>
+        <td>4678</td>
+        <td>1232</td>
+        <td>4678</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>41</td>
+        <td width="150px" align=left>42 / Б2 Вижайская, 25 (-300)</td>
+        <td>5245</td>
+        <td>1458</td>
+        <td>5245</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>42</td>
+        <td width="150px" align=left>43 / Б2 Солдатова, 42 (+500)</td>
+        <td>2916</td>
+        <td>801</td>
+        <td>2916</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>43</td>
+        <td width="150px" align=left>44 / Куйбышева, 71 (ровно)</td>
+        <td>4788</td>
+        <td>1326</td>
+        <td>4788</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>44</td>
+        <td width="150px" align=left>45 / Б3 Нейвинская, 10 (+500)</td>
+        <td>6394</td>
+        <td>1778</td>
+        <td>6394</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>45</td>
+        <td width="150px" align=left>46 / Горького, 72 (ровно)</td>
+        <td>6221</td>
+        <td>1639</td>
+        <td>6221</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>46</td>
+        <td width="150px" align=left>47 / Б2 Моторостроителей, 8 (+500)</td>
+        <td>4287</td>
+        <td>1192</td>
+        <td>4287</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>47</td>
+        <td width="150px" align=left>2 / Газеты Звезда, 75 (-200) 5тн</td>
+        <td>6280</td>
+        <td>1654</td>
+        <td>6280</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>48</td>
+        <td width="150px" align=left>48 / Б2 Уфимская, 12</td>
+        <td>3930</td>
+        <td>1088</td>
+        <td>3930</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>49</td>
+        <td width="150px" align=left>49 / Б3 Героев Хасана, 95</td>
+        <td>4953</td>
+        <td>1378</td>
+        <td>4953</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>50</td>
+        <td width="150px" align=left>50 / Б2 Гусарова, 18а (+800)</td>
+        <td>3665</td>
+        <td>1019</td>
+        <td>3665</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>51</td>
+        <td width="150px" align=left>51 / Б2 Куйбышева, 165 5тн</td>
+        <td>5411</td>
+        <td>1505</td>
+        <td>5411</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>52</td>
+        <td width="150px" align=left>52 / Б2 Солдатова, 29/3 5тн</td>
+        <td>3181</td>
+        <td>885</td>
+        <td>3181</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>53</td>
+        <td width="150px" align=left>53 / Б3 Холмогорская, 4В 5тн (-1000)</td>
+        <td>4522</td>
+        <td>1258</td>
+        <td>4522</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>54</td>
+        <td width="150px" align=left>54 / Горького, 64 5тн (+700)</td>
+        <td>2708</td>
+        <td>714</td>
+        <td>2708</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>55</td>
+        <td width="150px" align=left>56 / Б2 Лодыгина, 32 5тн (-500)</td>
+        <td>3733</td>
+        <td>1039</td>
+        <td>3733</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>56</td>
+        <td width="150px" align=left>55 / Б3 Балхашская, 198 (-1000)</td>
+        <td>5436</td>
+        <td>1514</td>
+        <td>5436</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>57</td>
+        <td width="150px" align=left>57 / Б3 Героев Хасана, 147 5тн</td>
+        <td>4557</td>
+        <td>1263</td>
+        <td>4557</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>58</td>
+        <td width="150px" align=left>58 / Комсомольский пр., 90  5тн (+1000)</td>
+        <td>4856</td>
+        <td>1351</td>
+        <td>4856</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>59</td>
+        <td width="150px" align=left>59 / Б3 Краснополянская, 7 5тн</td>
+        <td>7502</td>
+        <td>2086</td>
+        <td>7502</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>60</td>
+        <td width="150px" align=left>60 / Б3 Братская, 50А  5тн</td>
+        <td>5259</td>
+        <td>1382</td>
+        <td>5259</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>61</td>
+        <td width="150px" align=left>61 / Б2 Новосибирская, 24 5тн</td>
+        <td>2731</td>
+        <td>759</td>
+        <td>2731</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>62</td>
+        <td width="150px" align=left>62 / Б3 Косьвинская, 9  5тн</td>
+        <td>5560</td>
+        <td>1546</td>
+        <td>5560</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>63</td>
+        <td width="150px" align=left>63 / Б3 Чкалова, 8  5тн (-1000)</td>
+        <td>2756</td>
+        <td>726</td>
+        <td>2756</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>64</td>
+        <td width="150px" align=left>64 / Б3 Чкалова, 24  5тн</td>
+        <td>4552</td>
+        <td>1199</td>
+        <td>4552</td>
+        <td>0</td>
+        <td></td>
+    </tr>
+    <tr class="total_row">
+        <td></td>
+        <td></td>
+        <td>330634</td>
+        <td>90324</td>
+        <td>330634</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+</table>
+</div>
+          <div id="footer">
+          	&copy; ООО "Аквапост"
+          </div>
+	</div>
+</body>
+</html>

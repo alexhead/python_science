@@ -1,4 +1,4 @@
-from urllib.request import urlopen, urlretrieve
+    from urllib.request import urlopen, urlretrieve
 from bs4 import BeautifulSoup
 
 html = urlopen("https://ru.wikipedia.org/wiki/Python").read().decode('utf-8')
